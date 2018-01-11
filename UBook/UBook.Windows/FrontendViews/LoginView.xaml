@@ -1,0 +1,35 @@
+﻿<Page
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:UBook"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:UI="using:Microsoft.Advertising.WinRT.UI"
+    x:Class="UBook.FrontendViews.Index"
+    mc:Ignorable="d">
+
+    <Grid x:Name="LoginPage" Background="{ThemeResource ApplicationPageBackgroundThemeBrush}" Height="768" VerticalAlignment="Bottom">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <TextBlock x:Name="lblTitle" HorizontalAlignment="Center" Margin="545,72,531,0" TextWrapping="Wrap" VerticalAlignment="Top"  FontSize="72" FontWeight="Bold" FontFamily="Century Gothic" Height="88" Width="290">
+        	<Run Text="TourIS"/>
+        	<Run Text="T"/>
+        </TextBlock>
+        <AppBarButton x:Name="btnLogin" HorizontalAlignment="Left" Icon="Accept" Label="" Margin="788,364,0,0" Height="90" Width="121" IsCompact="True" Background="#FFB90000" Click="btnLogin_Click"/>
+        <HyperlinkButton x:Name="hbtReg" HorizontalAlignment="Left" Margin="766,418,0,310"  Click="btnReg_Click" Foreground="White" FontSize="14" Height="40" Width="66">
+            <TextBlock HorizontalAlignment="Center">
+        	    <Underline>
+                    <Run Text="here"/>
+                </Underline>
+            </TextBlock>
+        </HyperlinkButton>
+        <TextBlock x:Name="lblReg" HorizontalAlignment="Left" Margin="625,431,0,320" TextWrapping="Wrap" FontSize="14" Width="153" Height="17">
+        	<Run Text="New member?"/>
+        	<Run Text=" Sign up"/>
+        </TextBlock>
+        <TextBox x:Name="txtUser" HorizontalAlignment="Left" Margin="565,310,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="250" PlaceholderText="Username"/>
+        <PasswordBox x:Name="txtPass" HorizontalAlignment="Left" Margin="565,373,0,0" VerticalAlignment="Top" Width="250" PlaceholderText="Password" IsPasswordRevealButtonEnabled="True" KeyDown="txtPass_KeyDown"/>
+
+    </Grid>
+</Page>

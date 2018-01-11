@@ -1,0 +1,68 @@
+﻿<Page
+    x:Class="UBook.FrontendViews.ShoppingCartView"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:UBook"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <GridView HorizontalAlignment="Left" Height="74" Margin="-4,0,-5,0" VerticalAlignment="Top" Width="1375" Background="#FFC9691A"/>
+        <HyperlinkButton Content="Hotels" HorizontalAlignment="Left" Margin="90,12,0,0" VerticalAlignment="Top" Background="{x:Null}" Foreground="White" Height="39" Width="77" Click="HyperlinkButton_Click_1"/>
+        <HyperlinkButton Content="Restaurant" HorizontalAlignment="Left" Margin="232,12,0,0" VerticalAlignment="Top" Background="{x:Null}" Foreground="White" Click="HyperlinkButton_Click" Height="39" Width="106"/>
+        <HyperlinkButton x:Name="transportsBtn" Content="Transports" HorizontalAlignment="Left" Margin="392,12,0,0" VerticalAlignment="Top" Background="{x:Null}" Foreground="White" Click="transportsBtn_Click" Height="39" Width="104"/>
+        <HyperlinkButton x:Name="activityBtn" Content="Activity" HorizontalAlignment="Left" Margin="560,12,0,0" VerticalAlignment="Top" Background="{x:Null}" Foreground="White" Click="activityBtn_Click" Height="39" Width="95"/>
+        <HyperlinkButton x:Name="reservationBtn" Content="My reservations" HorizontalAlignment="Left" Margin="698,12,0,0" VerticalAlignment="Top" Background="{x:Null}" Foreground="White" Height="39" Width="140" Click="reservationBtn_Click"/>
+        <HyperlinkButton x:Name="helpBtn" Content="Help" HorizontalAlignment="Left" Margin="872,12,0,0" VerticalAlignment="Top" Background="{x:Null}" Foreground="White" Height="39" Width="66" Click="helpBtn_Click"/>
+        <AppBarToggleButton HorizontalAlignment="Left" Height="98" Label="Log out&#xA;&#xA;" Margin="1268,-8,-26,0" VerticalAlignment="Top" Width="124" Checked="AppBarToggleButton_Checked">
+            <AppBarToggleButton.Icon>
+                <SymbolIcon Height="40" Symbol="Cancel" VerticalAlignment="Bottom"/>
+            </AppBarToggleButton.Icon>
+        </AppBarToggleButton>
+        <SearchBox HorizontalAlignment="Left" Margin="1044,12,0,0" VerticalAlignment="Top" Width="208" PlaceholderText="Search for Services here" Height="32"/>
+        <TextBlock HorizontalAlignment="Left" Margin="10,107,0,0" TextWrapping="Wrap" Text="Items in cart" VerticalAlignment="Top" FontSize="32" FontWeight="Bold"/>
+        <ListView x:Name="lvCart" HorizontalAlignment="Left" Height="593" Margin="10,165,0,0" VerticalAlignment="Top" Width="1344" IsHoldingEnabled="False" IsSwipeEnabled="False" IsTapEnabled="False">
+            <ListViewItem Background="#FFC9691A" Content="Hey"/>
+            <ListViewItem/>
+            <ListViewItem/>
+            <ListViewItem/>
+            <ListViewItem/>
+            <ListViewItem/>
+            <ListViewItem/>
+            <ListViewItem/>
+            <ListViewItem/>
+            <ListViewItem/>
+            <ListViewItem/>
+            <ListViewItem Background="#FFC9691A"/>
+            <ListViewItem/>
+            <ListViewItem/>
+            <ListViewItem/>
+            <ListViewItem/>
+            <ListViewItem/>
+            <ListViewItem/>
+            <ListViewItem/>
+            <ListViewItem/>
+            <ListViewItem/>
+            <ListViewItem/>
+            <ListViewItem/>
+            <ListViewItem/>
+            <ListViewItem/>
+            <ListViewItem/>
+            <ListViewItem/>
+            <ListViewItem/>
+        </ListView>
+        <TextBlock x:Name="lbPrice" HorizontalAlignment="Left" Margin="1064,107,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="24"/>
+        <AppBarButton x:Name="Purchase" HorizontalAlignment="Left" Label="Purchase" Margin="1234,70,0,0" VerticalAlignment="Top" Click="Purchase_Click">
+            <AppBarButton.Icon>
+                <SymbolIcon Height="40" Symbol="Accept" VerticalAlignment="Top"/>
+            </AppBarButton.Icon>
+        </AppBarButton>
+        <AppBarButton x:Name="btnShoppingCart" HorizontalAlignment="Left" Label="Shopping Cart" Margin="920,-10,0,0" VerticalAlignment="Top" Click="AppBarButton_Click_2" Width="135">
+            <AppBarButton.Icon>
+                <SymbolIcon Margin="-15,0" Symbol="Shop"/>
+            </AppBarButton.Icon>
+        </AppBarButton>
+
+    </Grid>
+</Page>
